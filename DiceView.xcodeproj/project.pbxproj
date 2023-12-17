@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2C2516CA2B290682007E7177 /* DiceViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516C92B290682007E7177 /* DiceViewApp.swift */; };
-		2C2516CC2B290682007E7177 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516CB2B290682007E7177 /* ContentView.swift */; };
+		2C2516CC2B290682007E7177 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516CB2B290682007E7177 /* DiceView.swift */; };
 		2C2516CE2B290682007E7177 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516CD2B290682007E7177 /* Item.swift */; };
 		2C2516D02B290683007E7177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2516CF2B290683007E7177 /* Assets.xcassets */; };
 		2C2516D32B290683007E7177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2516D22B290683007E7177 /* Preview Assets.xcassets */; };
+		2C2516DA2B290947007E7177 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516D92B290947007E7177 /* ContentView.swift */; };
+		2C2516DC2B2CAE87007E7177 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2516DB2B2CAE87007E7177 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C2516C62B290682007E7177 /* DiceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2516C92B290682007E7177 /* DiceViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewApp.swift; sourceTree = "<group>"; };
-		2C2516CB2B290682007E7177 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C2516CB2B290682007E7177 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		2C2516CD2B290682007E7177 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C2516CF2B290683007E7177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2516D22B290683007E7177 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C2516D92B290947007E7177 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C2516DB2B2CAE87007E7177 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				2C2516C92B290682007E7177 /* DiceViewApp.swift */,
-				2C2516CB2B290682007E7177 /* ContentView.swift */,
+				2C2516CB2B290682007E7177 /* DiceView.swift */,
+				2C2516D92B290947007E7177 /* ContentView.swift */,
+				2C2516DB2B2CAE87007E7177 /* SplashView.swift */,
 				2C2516CD2B290682007E7177 /* Item.swift */,
 				2C2516CF2B290683007E7177 /* Assets.xcassets */,
 				2C2516D12B290683007E7177 /* Preview Content */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2516CC2B290682007E7177 /* ContentView.swift in Sources */,
+				2C2516CC2B290682007E7177 /* DiceView.swift in Sources */,
 				2C2516CE2B290682007E7177 /* Item.swift in Sources */,
+				2C2516DC2B2CAE87007E7177 /* SplashView.swift in Sources */,
+				2C2516DA2B290947007E7177 /* ContentView.swift in Sources */,
 				2C2516CA2B290682007E7177 /* DiceViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +287,7 @@
 				DEVELOPMENT_TEAM = WS7XMU4939;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +317,7 @@
 				DEVELOPMENT_TEAM = WS7XMU4939;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
