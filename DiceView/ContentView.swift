@@ -45,14 +45,34 @@ struct ContentView: View {
                 numberOfDice = 1
                 numberOffAll = 0
             }
-            .padding()
-            .background(Color(red: 0, green: 0, blue: 0.5))
-            .clipShape(Capsule())
+            .buttonStyle(GrowingButton())
         }
         .padding()
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .background(.indigo)
         .tint(.white)
+    }
+}
+
+struct BlueButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color(red: 0, green: 0, blue: 0.5))
+            .foregroundStyle(.white)
+            .clipShape(Capsule())
+    }
+}
+
+struct GrowingButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(.blue)
+            .foregroundStyle(.white)
+            .clipShape(Capsule())
+            .scaleEffect(configuration.isPressed ? 1.3 : 1)
+            .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
 
